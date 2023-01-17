@@ -1569,7 +1569,29 @@ public static boolean isPalindrome(Queue<Integer> q) {
 
 
 
+Да, я могу написать рекурсивную функцию на Java, которая проверяет, является ли число степенью двойки. Вот пример такой функции:
 
+public static boolean isPowerOfTwo(int n) {
+
+    if (n == 0) 
+
+        return false; 
+
+  
+
+    while (n != 1) { 
+
+        if (n % 2 != 0) 
+
+            return false; 
+
+        n = n / 2; 
+
+    } 
+
+    return true; 
+
+}
 
 
 
