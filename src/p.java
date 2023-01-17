@@ -1596,7 +1596,17 @@ public static boolean isPowerOfTwo(int n) {
 
 
 
+Для запуска public void guavaSort(String[] array) {
 
+    Multiset<String> multiset = HashMultiset.create(Arrays.asList(array));
+
+    List<String> sortedList = new ArrayList<>(multiset);
+
+    Collections.sort(sortedList);
+
+    array = sortedList.toArray(new String[sortedList.size()]);
+
+} Вам нужно создать массив строк и передать его в метод guavaSort. Затем метод создаст мультисет из массива строк, создаст список из мультисета, отсортирует список и вернет отсортированный массив строк.
 
 
 
