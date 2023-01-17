@@ -1612,7 +1612,27 @@ public static boolean isPowerOfTwo(int n) {
 
 
 
+public static boolean hasOdd(Set<Integer> set) {
 
+    if (set.isEmpty()) {
+
+        return false;
+
+    }
+
+    for (Integer num : set) {
+
+        if (num % 2 != 0) {
+
+            return true;
+
+        }
+
+    }
+
+    return false;
+
+}
 
 
 
