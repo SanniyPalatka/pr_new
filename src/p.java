@@ -1500,7 +1500,33 @@ System.out.println("Area of circle: " + circle.calculateArea());
 
 
 
+public void reverseHalf(Queue<Integer> q) {
 
+    int size = q.size();
+
+    int mid = size / 2;
+
+    Stack<Integer> s = new Stack<>();
+
+    for (int i = 0; i < mid; i++) {
+
+        s.push(q.remove());
+
+    }
+
+    while (!s.isEmpty()) {
+
+        q.add(s.pop());
+
+    }
+
+    for (int i = 0; i < mid; i++) {
+
+        q.add(q.remove());
+
+    }
+
+}
 
 
 
